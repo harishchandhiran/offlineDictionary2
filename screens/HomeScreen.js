@@ -53,11 +53,7 @@ export default class HomeScreen extends Component{
             onChangeText={text => {
               this.setState({
                 text: text,
-                isSearchPressed: false,
-                word  : "Loading...",
-                lexicalCategory :'',
-                examples : [],
-                defination : ""
+                ...this.state
               });
             }}
             value={this.state.text}
